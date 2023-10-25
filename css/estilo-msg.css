@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap');
+
+/* Reset CSS para garantir a consistência entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para a barra de navegação */
+header {
+    background-color: #19b6bb;
+    min-height: 100%;
+    padding: 20px;
+   
+}
+
+header li {
+    margin: 30px;
+}
+
+/* Centralize a imagem verticalmente na barra de navegação */
+.navbar-brand img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand span {
+    margin-right: 20px;
+}
+
+.navbar-brand img {
+    width: 100px;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #530404;
+}
+/* Estilos para o conteúdo principal */
+main {
+    padding: 12px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 30px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #19b6bb;
+}
+
+/* Rodapé */
+footer  {
+    text-align: center;
+    padding: 10%;
+    background-color: #19b6bb;
+    font-size: 13px;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como tablets */
+    header {
+        padding: 10px;
+    }
+    .navbar-brand img {
+        width: 80px;
+    }
+    .nav-item {
+        margin-right: 5px;
+    }
+    p {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para dispositivos móveis */
+    header {
+        padding: 5px;
+    }
+    .navbar-brand img {
+        width: 60px;
+    }
+    .nav-item {
+        margin-right: 5px;
+    }
+    p {
+        margin: 5px;
+    }
+}
