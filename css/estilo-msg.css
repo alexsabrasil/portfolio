@@ -13,7 +13,7 @@ body {
 
 /* Estilos para a barra de navegação */
 header {
-    background-color: #19b6bb;
+    background-color: #b535dc;
     min-height: 100%;
     padding: 20px;
    
@@ -84,14 +84,14 @@ p {
 }
 
 a {
-    color: #19b6bb;
+    color: #b535dc;
 }
 
 /* Rodapé */
 footer  {
     text-align: center;
     padding: 10%;
-    background-color: #19b6bb;
+    background-color: #b535dc;
     font-size: 13px;
 }
 

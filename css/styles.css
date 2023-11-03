@@ -44,7 +44,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-align: justify;
-    color: #dc3545;
+    color: #b535dc;
 }
 
 .section-div div a {
@@ -123,11 +123,14 @@ main .sobre {
 
 .sobre_titulo h1 {
     font-size: 2.2rem;
-    color: #ff5d56;
+    color: #c878e0;
     margin-bottom: 15px;
     font-family: 'Berkshire Swash','Trebuchet MS', sans-serif,
 }
 
+.two-columns {
+    color: #707070;
+}
 .sobre_titulo p {
     color: #707070;
     font-size: 1.1rem;
@@ -146,7 +149,7 @@ main .sobre {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #dc3545;
+    background-color: #b535dc;
 }
 
 .sobre img {
@@ -154,6 +157,7 @@ main .sobre {
     cursor: pointer;
     grid-row: 2;
     max-width: 100%;
+    height: 100%;
     border-radius: 4px;
     filter: blur(0);
 }
@@ -185,7 +189,7 @@ main .sobre {
 }
 
 .sobre_texto h1::after {
-    background-color: #ff5d56;
+    background-color: #b535dc;
     height: 6px;
     width: 60px;
     margin: 20px 0;
@@ -210,7 +214,7 @@ main .sobre {
 }
 
 .sobre_info i {
-    color: #dc3545;
+    color: #b535dc;
     display: inline-block;
     padding-right: 15px;
     font-size: 1.2rem;
@@ -243,6 +247,64 @@ main .sobre {
     }
 }
 
+/* Serviços Skills*/
+.skills{
+	margin: 0 40px;
+	display: flex;
+    padding: 20px;
+	flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #c878e0;
+}
+.titulo-skills{
+	margin: 20px;
+	
+}
+
+.grid_container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	justify-content: center;
+	align-items: center;
+    margin-left: 15%;
+	background: #111;
+	padding: 50px;
+	border-radius: 50px;
+	list-style: none;
+	grid-column-gap: 45px;
+	grid-row-gap: 60px;
+	width: 75vw;
+	
+}
+.grid_items{
+	justify-self: center;
+	padding: 10px 4px 5px 4px;
+	border-radius: 20px;
+	border: 0.5px solid #aaa;
+	transition-duration: 0.2s;
+}
+.grid_items:hover{
+	box-shadow: 0 2px 15px 0 #3EC1D5;
+}
+.grid_items p{
+	padding: 1px;
+	font-size: 14px;
+	text-align: center;
+}
+.grid_items img{
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+}
+.sketchup{
+	transform: scaleY(2.5);
+	margin-bottom: 10px;
+}
+
 /* Meus Projetos */
 .projects {
     padding: 30px;
@@ -269,7 +331,7 @@ main .sobre {
 }
 
 .projects_models ul li:hover {
-    background-color: #dc3545;
+    background-color: #c878e0;
     color: #151515;
     font-weight: bold;
 }
@@ -315,7 +377,7 @@ main .sobre {
 }
 
 .projects_armazenamento a:hover {
-   color: #ff0000;
+   color: #c878e0;
 }
 
 @keyframes animationImagemButton {
@@ -338,7 +400,7 @@ main .sobre {
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0e0d0d;
-    color: #dc3545;
+    color: #c878e0;
     gap: 30px;
 }
 
@@ -413,6 +475,7 @@ footer {
 
 .footer-list {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
@@ -471,7 +534,7 @@ footer {
 #footer-copyright {
     display: flex;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Puppins', sans-serif;
     font-size: 12px;
     padding: 1.5rem;
     font-weight: 100;
