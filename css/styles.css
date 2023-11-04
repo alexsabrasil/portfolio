@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -247,6 +247,52 @@ main .sobre {
     }
 }
 
+/*Cards Flip - cursos */
+.face {
+    width: 280px;
+    height: 200px;
+    margin: 50px auto;
+    perspective: 400px;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 700ms;
+}
+
+.front, .img {
+    text-align: center;
+}
+
+.back, .img {
+    text-align: center;
+}
+
+.front {
+    background: #7f37c9;
+    z-index: 1;
+}
+
+.back {
+    background: #7f37c9; 
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+
+.face:hover .front {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.face:hover .back{
+    transform: rotateY(0);
+    z-index: 1;
+}
+
 /* Serviços Skills*/
 .skills{
 	margin: 0 40px;
@@ -255,14 +301,15 @@ main .sobre {
 	flex-direction: column;
 }
 
-h3 {
+
+h3  {
     text-align: center;
     font-size: 35px;
     color: #c878e0;
 }
+
 .titulo-skills{
 	margin: 20px;
-	
 }
 
 .grid_container{
